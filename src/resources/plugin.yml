@@ -1,0 +1,41 @@
+name: Efficiency
+version: 1.0.0
+main: org.mcsci.efficiency.Efficiency
+api-version: 1.13
+author: CinderyBell6765
+description: 高效功能插件 - 自定义传送、区块显示和商店系统
+website: https://blog.mcsci.cn
+
+commands:
+  cs:
+    description: 向玩家发送传送请求
+    usage: /cs <玩家名>
+    permission: efficiency.teleport
+    permission-message: 你没有使用此命令的权限！
+  qk:
+    description: 开启或关闭区块显示
+    usage: /qk <open|stop>
+    permission: efficiency.chunkshow
+    permission-message: 你没有使用此命令的权限！
+  ef:
+    description: 效率商店系统
+    usage: /ef <shop|help>
+    permission: efficiency.shop
+    permission-message: 你没有使用此命令的权限！
+
+permissions:
+  efficiency.*:
+    description: 所有Efficiency插件权限
+    children:
+      efficiency.teleport: true
+      efficiency.chunkshow: true
+      efficiency.shop: true
+  efficiency.teleport:
+    description: 使用自定义传送功能
+    default: true
+  efficiency.chunkshow:
+    description: 使用区块显示功能
+    default: true
+  efficiency.shop:
+    description: 使用商店系统
+    default: true

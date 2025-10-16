@@ -1,0 +1,26 @@
+# Efficiency插件配置
+
+# 传送请求设置
+teleport:
+  request-timeout: 30 # 请求超时时间（秒）
+  cooldown: 10 # 冷却时间（秒）
+  
+# 区块显示设置
+chunk-show:
+  update-interval: 1 # 更新间隔（刻）
+  show-actionbar: true # 是否在动作栏显示
+  
+# 商店设置
+shop:
+  expiration-days: 7 # 商品过期天数
+  max-items-per-player: 50 # 每个玩家最大上架物品数量
+  
+# 消息设置
+messages:
+  request-sent: "&a已向玩家 {target} 发送传送请求！"
+  request-received: "&e玩家 {requester} 向你发送了传送请求！"
+  request-accepted: "&a你的传送请求已被 {accepter} 接受！"
+  request-denied: "&c你的传送请求已被 {denier} 拒绝！"
+  request-expired: "&c传送请求已过期！"
+  shop-item-added: "&a成功上架物品！价格: &b{price} 钻石/个 &a数量: {quantity} 个"
+  shop-item-bought: "&a成功购买 {quantity} 个 {item}！花费: {totalPrice} 钻石"
